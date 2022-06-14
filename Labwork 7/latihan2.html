@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<style type="text/css">
+		.highlight.text{
+			background: yellow;
+			color: red;
+			font-weight: bold;
+		}
+	</style>
+	<title>Latihan 2</title>
+</head>
+<body>
+	<div id="content">
+		<h1>PTIK FKIP UNS</h1>
+		<p class="context">
+			The <span class="highlight"> Informatics and Computer Technology Education (PTIK) </span> study program is planned to take shelter in the
+        	management of the <span class="highlight"> Engineering and Vocational Education (PTK)</span> department. This placement revises our previous
+        	statement, where the PTIK study program is under the P.MIPA department. PTIK is a study program that will
+			<br>
+			<br>
+			 produce graduates who are <span class="highlight"> prioritized to teach in vocational/vocational programs </span>. So, it would be better if PTIK
+       		 was under the PTK department which oversees vocational programs such as <span class="highlight"> Building Engineering Education </span>, and
+        	<span class="highlight"> Mechanical Engineering Education</span>. To meet the needs of lecturers in the field of information technology that
+        	cannot be met by the PTK department, PTIK will conduct <span class="highlight"> resource sharing with the mathematics study program</span>.
+		</p>
+	</div>
+	<br>
+	<button onclick="highlightButton()">Highlight Paragraf</button>
+
+
+	<script type="text/javascript">
+		 const highlight = document.querySelectorAll('.highlight');
+
+        function highlightButton() {
+            highlight.forEach( (item) => {
+                if(item.classList.contains('text')) {
+                    item.classList.remove('text')
+                } else {
+                    item.classList.add('text')
+                }
+            })       
+        };
+	</script>
+</body>
+</html>

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Kalkulator Sederhana</title>
+</head>
+<body>
+	<center>
+		<h1>Kalkulator Sederhana</h1>
+		<div>
+			<p>Masukan Angka Pertama</p>
+			<input type="number" id="n1">
+			<br>
+			<p>Pilih Operator Artimatika</p>
+			<select id="operator">
+				<option value="+">+</option>
+				<option value="-">-</option>
+				<option value="*">*</option>
+				<option value="/">/</option>
+			</select>
+			<br>
+			<p>Pilih Angka Kedua</p>
+			<input type="number" id="n2">
+			<br>
+			<span>=</span>
+			<br>
+			<span id="hasil">Hasil</span>
+			<br>
+			<br>
+			<button id="submit">Submit</button>
+		</div>
+		<script type="text/javascript">
+			const n1 = document.getElementById('n1')
+			const n2 = document.getElementById('n2')
+			const operator = document.getElementById('operator')
+			const hasil = document.getElementById('hasil')
+			const submit = document.getElementById('submit')
+
+			submit.addEventListener('click', function () {
+				hasil.innerText = eval(n1.value + operator.value + n2.value)
+			})
+		</script>
+	</center>
+</body>
+</html>

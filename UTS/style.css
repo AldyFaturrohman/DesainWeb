@@ -1,0 +1,234 @@
+		{
+			margin: 0;
+			padding: 0;
+			box-sizing: border-box;
+		}
+
+		body{
+			background: #d8f3dc;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			min-height: 100vh;
+		}
+
+		.container{
+			position: relative;
+			width: 100%;
+			max-width: 1000px;
+			min-height: 1200px;
+			margin: 50px;
+			background: white;
+			display: grid;
+			grid-template-columns: 1fr 2fr;
+			box-shadow: 0 10px 20px;
+		}
+
+		.left{
+			position: relative;
+			background: #1b4332;
+			padding: 40px;
+		}
+
+		.right{
+			position: relative;
+			background: white;
+			padding: 40px;
+		}
+
+		.profile{
+			position: relative;
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			padding-bottom: 20px;
+			border-bottom: 1px solid #d8f3dc;
+		}
+
+		.pp{
+			position: relative;
+			width: 200px;
+			height: 200px;
+			border-radius: 50%;
+			overflow: hidden;
+		}
+
+		.pp img{
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 100%;
+			object-fit: cover;
+		}
+
+		.profile h2{
+			color: white;
+			font-size: 14px;
+			margin-top: 20px;
+			text-transform: uppercase;
+			text-align: center;
+			font-weight: 600;
+			line-height: 15px;
+		}
+
+		.profile h2 span{
+			font-size: 11px;
+			font-weight: 300;
+		}
+
+		.contact{
+			padding-top: 20px;
+		}
+
+		.title{
+			color: white;
+			font-weight: 500;
+			text-transform: uppercase;
+			letter-spacing: 1px;
+			margin-bottom: 30px;
+		}
+
+		.contact ul{
+			position: relative;
+			padding: 0px;
+			font-size: 15px;
+		}
+
+		.contact ul li{
+			position: relative;
+			list-style: none;
+			margin: 10px 0;
+			cursor: pointer;
+		}
+
+		.contact ul li span{
+			color: white;
+			font-weight: 300;
+		}
+
+		.contact ul li .icon{
+			display: inline-block;
+			width: 30px;
+			font-size: 17px;
+			color: #95d5b2;
+		}
+
+		.contact.edu li{
+			margin-bottom: 15px;
+		}
+
+		.contact.edu h5{
+			color: #95d5b2;
+			font-size: 17px;
+			font-weight: 500;
+			margin-bottom: 10px;
+		}
+
+		.contact.edu h4{
+			color: white;
+			font-weight: 500;
+			margin-top: 5px;
+		}
+
+		.contact.desc li{
+			margin-bottom: 15px;
+		}
+
+
+		.contact.desc h4{
+			color: #95d5b2;
+			font-weight: 500;
+			margin-top: 5px;
+		}
+
+		.contact.birth li{
+			margin-bottom: 15px;
+		}
+
+
+		.contact.birth h4{
+			color: #95d5b2;
+			font-weight: 500;
+			margin-top: 5px;
+		}
+
+		.contact .titlekanan{
+			color: #2d6a4f;
+			text-transform: uppercase;
+			font-size: 20px;
+			font-weight: 600;
+		}
+
+		.contact.organisasi li{
+			margin-bottom: 10px;
+		}
+
+
+		.contact.namaorganisasi{
+			color: #2d6a4f;
+			font-weight: 500;
+			margin-top: 0px;
+		}
+
+		.contact .titleskill{
+			color: #2d6a4f;
+			text-transform: uppercase;
+			font-size: 20px;
+			font-weight: 600;
+
+		}
+
+		.contact.skill .percent{
+			position: relative;
+			width: 100%;
+			height: 6px;
+			background: black;
+			display: block;
+			margin-top: 5px;
+			margin-bottom: 10px;
+		}
+
+		.contact.skill .percent div{
+			position: absolute;
+			top: 0;
+			left: 0;
+			height: 100%;
+			background: #95d5b2;
+		}
+
+		.contact .text2{
+			color: black;
+		}
+
+		.contact .titleinterest{
+			color: #2d6a4f;
+			text-transform: uppercase;
+			font-size: 20px;
+			font-weight: 600;
+
+		}
+
+		.interest ul{
+			display: grid;
+			grid-template-columns: repeat(1, 1fr);
+		}
+
+		.interest ul li{
+			margin: 20px 0;
+		}
+
+		.interest ul li .fa-solid{
+			color: #95d5b2;
+			margin-right: 5px;
+		}
+
+		@media (max-width: 1000px){
+			.container{
+				margin: 10px;
+				grid-template-columns: repeat(1, 1fr);
+			}
+			.interest ul{
+				grid-template-columns: repeat(1, 1fr);
+			}
+		}
